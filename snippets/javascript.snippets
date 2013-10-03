@@ -1,7 +1,7 @@
 # Prototype
 snippet proto
 	${1:class_name}.prototype.${2:method_name} =
-	function(${3:first_argument}) {
+	function (${3:first_argument}) {
 		${0:// body...}
 	}
 # Function
@@ -137,7 +137,7 @@ snippet sing
 		var instance
 
 		// rewrite the constructor
-		$1 = function $1($2) {
+		$1 = function $1 ($2) {
 			return instance
 		}
 
@@ -156,8 +156,8 @@ snippet sing
 	}
 # Crockford's object function
 snippet obj
-	function object(o) {
-		function F() {}
+	function object (o) {
+		function F () {}
 		F.prototype = o
 		return new F()
 	}
@@ -166,10 +166,10 @@ snippet props
 	var ${1:my_object} = Object.defineProperties(
 		${2:new Object()}
 	, { ${3:property} :
-			{ get : function $1_$3_getter() {
+			{ get : function $1_$3_getter () {
 					// getter code
 				}
-			, set : function $1_$3_setter(value) {
+			, set : function $1_$3_setter (value) {
 					// setter code
 				}
 			, value        : ${4:value}
@@ -184,10 +184,10 @@ snippet prop
 	Object.defineProperty(
 		${1:object}
 	, "${2:property}"
-	, { get : function $1_$2_getter() {
+	, { get : function $1_$2_getter () {
 				// getter code
 			}
-		, set : function $1_$2_setter(value) {
+		, set : function $1_$2_setter (value) {
 				// setter code
 			}
 		, value        : ${3:value}
